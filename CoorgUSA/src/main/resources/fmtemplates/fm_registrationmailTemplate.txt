@@ -1,0 +1,11 @@
+<html>
+     <body>
+        <h3>Dear ${user.firstname}, thank you for registering !!!</h3>
+        <div>
+            Your username is : ${user.username}.
+        </div>
+         <div>
+            Your password is : ${user.password}.
+        </div>
+    </body>
+</html>
