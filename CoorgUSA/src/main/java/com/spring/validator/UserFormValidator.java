@@ -52,11 +52,11 @@ public class UserFormValidator implements Validator {
 			errors.rejectValue("firstname", "Pattern.user.firstname");
 		}
 		if (!validname(user.getLastname())) {
-			errors.rejectValue("lastname", "Pattern.user.lastname");
+			errors.rejectValue("lastnasme", "Pattern.user.lastname");
 		}
-		if (!validname(user.getUsername())) {
+		/*if (!validusername(user.getUsername())) {
 			errors.rejectValue("username", "Pattern.user.username");
-		}
+		}*/
 		if (user.getPassword().length() < MINIMUM_FIELD_LENGTH || user.getPassword().length() > MAX_FIELD_LENGTH) {
 			errors.rejectValue("username", "password.minmax.length");
 		}
